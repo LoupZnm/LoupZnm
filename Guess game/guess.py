@@ -81,6 +81,7 @@ class Guess :
                 pass
             if '.' not in self.lst_word :
                 running = False
+            print('')
         if life == 0 :
             text = 'Try another time, the word was : ' + self.word
         else :
