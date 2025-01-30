@@ -66,7 +66,7 @@ class Guess :
                     letter = input('try a letter : ')
                     find = self.find(letter)
                     if find == True :
-                        print(str(find) + ' : '+ str(letter) + ' , rang de la lettre : '+ str(self.word.index(letter)+1) )
+                        print(str(find) + ' : '+ str(letter) + ' , rank of the letter : '+ str(self.word.index(letter)+1) )
                     else :
                         print('Wrong !')
                         life -=1
