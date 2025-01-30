@@ -46,7 +46,7 @@ class Guess :
         if self.word != None :
             for i in range(len(self.lst_word)) :
                 char += self.lst_word[i]
-        print(char)
+        return char
     def play(self) :
         '''
         Lance une partie du jeu
@@ -59,7 +59,7 @@ class Guess :
             self.lst_word.append('.')
         while running != False and life > 0 :
             print('Life : ' + str(life))
-            self.__str__()
+            print(self.__str__())
             choose = int(input('letter : 1 or try to guess : 2 '))
             if  choose == 1 or choose == 2 :
                 if choose == 1 :
